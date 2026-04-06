@@ -294,19 +294,11 @@
           </div>
         </div>
         <!-- Début de widget en ligne Calendly -->
-<div class="bg-white p-10 md:p-16 rounded-[2rem] text-gray-900 shadow-xl relative z-10 flex flex-col items-center justify-center text-center">
-  <h3 class="text-2xl font-black uppercase italic mb-6">Prêt à briller ?</h3>
-  <p class="text-gray-500 mb-8">Cliquez ci-dessous pour choisir votre plage horaire et votre forfait (Laval, Montréal, Rive-Nord).</p>
-  
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <button type="button" 
-          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/j-eesthetiqueauto/30min'});return false;" 
-          class="bg-blue-600 text-white px-10 py-5 rounded-2xl font-black text-xl hover:bg-blue-500 transition shadow-xl uppercase italic tracking-tighter transform hover:scale-105">
-    Choisir ma date & forfait
-  </button>
-</div>
-
+<!-- Début de widget de badge Calendly -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/j-eesthetiqueauto', text: 'Planifier du temps avec moi', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
+<!-- Fin de widget de badge Calendly -->
   <!-- Pied de page -->
   <footer class="bg-gray-100 py-16 px-6 border-t border-gray-200">
     <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
